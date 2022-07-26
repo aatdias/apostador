@@ -3309,16 +3309,16 @@ footer .container {
 }
 
 .video-container{
-    width: 50%;
-    height: 50%;
+    width: 100vw;
+    height: 100vh;
   }
       
   iframe {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50%;
-    height: 50%;
+    width: 100vw;
+    height: 100vh;
     transform: translate(-50%, -50%);
   }
 
@@ -3342,20 +3342,32 @@ footer .container {
 
 /*Video Fluid Section Starts Here*/
 .video-fluid {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
 
-   }
+@media (min-width: 576px) {
+    .video-fluid {
+        height: 450px;
+    }
+}
 
-@media (min-width: 50px) {
+@media (min-width: 768px) {
+    .video-fluid {
+        height: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
     .video-fluid {
         height: 870px;
-        width: 100%;ch;
-        position: relative;
     }
 }
 
 .video-fluid::before {
-    width: 50%;
-    height: 50%;
+    width: 101%;
+    height: 101%;
     background: rgba(25, 22, 52, 0.51);
 }
 
