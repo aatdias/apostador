@@ -3342,38 +3342,20 @@ footer .container {
 
 /*Video Fluid Section Starts Here*/
 .video-fluid {
-    height: auto;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10%;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 130px;
-    margin-bottom: 50px;
-}
 
-@media (min-width: 576px) {
-    .video-fluid {
-        height: 450px;
-    }
-}
+   }
 
-@media (min-width: 768px) {
-    .video-fluid {
-        height: 750px;
-    }
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 50px) {
     .video-fluid {
         height: 870px;
+        width: 100%;ch;
+        position: relative;
     }
 }
 
 .video-fluid::before {
-    width: 101%;
-    height: 101%;
+    width: 50%;
+    height: 50%;
     background: rgba(25, 22, 52, 0.51);
 }
 
