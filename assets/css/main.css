@@ -3309,16 +3309,16 @@ footer .container {
 }
 
 .video-container{
-    width: 100vw;
-    height: 100vh;
+    width: 50%;
+    height: 50%;
   }
       
   iframe {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
-    height: 100vh;
+    width: 50%;
+    height: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -3342,9 +3342,14 @@ footer .container {
 
 /*Video Fluid Section Starts Here*/
 .video-fluid {
-    height: 300px;
+   /* height: 100px;*/
     position: relative;
     overflow: hidden;
+    border-radius: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 130px;
+    margin-bottom: 50px;
 }
 
 @media (min-width: 576px) {
