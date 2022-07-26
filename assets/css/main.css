@@ -3342,7 +3342,8 @@ footer .container {
 
 /*Video Fluid Section Starts Here*/
 .video-fluid {
-   /* height: 100px;*/
+    height: auto;
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 10%;
