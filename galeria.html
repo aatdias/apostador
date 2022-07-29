@@ -144,7 +144,7 @@
     <!-- === Header Section === -->
 
     <!-- === Hero Section === -->
-    <section class="hero-section">
+    <!--section class="hero-section">
         <a href="#about" class="banner-icon">
             <i class="flaticon-down-arrow"></i>
         </a>
@@ -158,22 +158,88 @@
             </div>
         </div>
     </section>
-    <!-- === Hero Section === -->
+    <-- === Hero Section === -->
 
 
     <!-- === Blog Section === -->
     <section class="blog-section padding-top" id="about">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="post-item post-details">
-                        <div class="post-thumb">
-                            <div class="post-thumb">
-                                 <img src="images/feedback/1.png"></img>
-                                 <img src="images/feedback/2.jpeg"></img>                               
-                            </div>
-                        </div>
-
+        <html>
+            <head>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            </head>
+          <body>
+          <div id="slider">
+              <a href="#" class="control_next">&gt;</a>
+              <a href="#" class="control_prev">&lt;</a>
+              <ul>
+                  <li>
+                      <a>
+                          <img src="assets/images/feedback/1.png"/ width=500px; height=600px;>
+                      </a>
+                  </li>
+                  <li>
+                    <a>
+                        <img src="assets/images/feedback/2.jpeg"width=500px; height=600px;>
+                    </a>
+                </li>
+                  <li>
+                      <a>
+                        <img src="assets/images/feedback/3.jpeg"width=500px; height=600px;>
+                      </a>
+                  </li>
+                  <li>
+                    <a>
+                        <img src="assets/images/feedback/4.jpeg"width=500px; height=600px;>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <script>
+            $(function() {
+            $('#checkbox').change(function () {
+                setInterval(function () {
+                    moveRight();
+                }, 3000);
+            });
+            var slideCount = $('#slider ul li').length;
+            var slideWidth = $('#slider ul li').width();
+            var slideHeight = $('#slider ul li').height();
+            var sliderUlWidth = slideCount * slideWidth;
+            $('#slider').css({
+                width: slideWidth,
+                height: slideHeight
+            });
+            $('#slider ul').css({
+                width: sliderUlWidth,
+                marginLeft: -slideWidth
+            });
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            function moveLeft() {
+                $('#slider ul').animate({
+                    left: +slideWidth
+                }, 200, function () {
+                    $('#slider ul li:last-child').prependTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+            function moveRight() {
+                $('#slider ul').animate({
+                    left: -slideWidth
+                }, 200, function () {
+                    $('#slider ul li:first-child').appendTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+            $('a.control_prev').click(function () {
+                moveLeft();
+            });
+            $('a.control_next').click(function () {
+                moveRight();
+            });
+        });
+        </script>
+          </body>
+          </html>
     </section>
     <!-- === Blog Section === -->
 
