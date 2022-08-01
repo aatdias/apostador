@@ -3309,7 +3309,7 @@ footer .container {
 }
 
 .video-container{
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
   }
       
@@ -3342,28 +3342,16 @@ footer .container {
 
 /*Video Fluid Section Starts Here*/
 .video-fluid {
-    height: 300px;
+    /*height: 300px;*/
     position: relative;
     overflow: hidden;
 }
 
-@media (min-width: 576px) {
-    .video-fluid {
-        height: 450px;
-    }
-}
-
-@media (min-width: 768px) {
-    .video-fluid {
-        height: 750px;
-    }
-}
-
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .video-fluid {
         height: 870px;
     }
-}
+}*/
 
 .video-fluid::before {
     width: 101%;
