@@ -3344,7 +3344,8 @@ footer .container {
 .video-fluid {
     /*height: 300px;*/
     position: relative;
-    overflow: hidden;
+    width: 100%;
+   /* overflow: hidden;*/
 }
 
 /*@media (min-width: 1200px) {
@@ -3353,11 +3354,11 @@ footer .container {
     }
 }*/
 
-.video-fluid::before {
+/*.video-fluid::before {
     width: 101%;
     height: 101%;
     background: rgba(25, 22, 52, 0.51);
-}
+}*/
 
 /*History Section Starts Here*/
 .history-tab {
