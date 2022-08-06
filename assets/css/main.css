@@ -4079,12 +4079,12 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
 }
 
 .history-wrapper {
-    margin-bottom: -80px;
+    margin-bottom: -10px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 100px) {
     .history-wrapper {
-        margin-bottom: -100px;
+        margin-bottom: -10px;
     }
 }
 
@@ -5535,12 +5535,12 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
     margin: 0 auto;
 }
 .HomePage-homeVideoWrapper-274 {
-    height: 550px;
+    height: 100%;
     margin: auto;
     z-index: 1;
     position: relative;
     padding-top: 25px;
-    padding-bottom: 56.25%;
+    padding-bottom: 10%;
     display: block;
     overflow: hidden;
 }
@@ -5739,4 +5739,8 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
          margin: 10px auto;
          width: 160px;
          font-size: 18px;
+     }
+
+     .imagem {
+        width: 1005;
      }
