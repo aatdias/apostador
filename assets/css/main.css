@@ -5742,5 +5742,6 @@ div[class*="col"]:nth-of-type(4n + 4) .info-inner {
      }
 
      .imagem {
-        width: 1005;
+        margin-top: 20px;
+        width: 2000;
      }
